@@ -27,9 +27,10 @@
 
 //random number guessing game
 
-RandomNumber = 
-num = alert(prompt("Guess The Number to Win 1Cr"));
+RandomNumber = 90;
+num = prompt("Guess The Number to Win 1Cr");
 
-if(num = RandomNumber){
-    alert("You won the 1Cr");
+if(num !== RandomNumber){
+num = prompt("Guess The Number to Win 1Cr");
 }
+alert("You won the 1Cr");
