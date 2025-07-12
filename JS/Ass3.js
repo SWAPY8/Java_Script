@@ -27,10 +27,12 @@
 
 //random number guessing game
 
-RandomNumber = 90;
-num = prompt("Guess The Number to Win 1Cr");
+let RandomNumber = 55;
+let num = parseInt(prompt("Guess The Number to Win 1Cr"));
 
-if(num !== RandomNumber){
-num = prompt("Guess The Number to Win 1Cr");
+while (num !== RandomNumber) {
+  num = parseInt(prompt("Wrong guess! Try again to win 1Cr"));
 }
-alert("You won the 1Cr");
+
+alert("Congratulations! You won 1Cr!");
+
