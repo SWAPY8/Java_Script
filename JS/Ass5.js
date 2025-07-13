@@ -43,7 +43,53 @@
 
 // //arrow function
 
-// let count
-// const countfunction = (srt) => {
-//     for(let i = 0; )
-// }
+// let count = 0;
+// const countfunction = (str) => {
+//   for (let i = 0; i < str.length; i++) {
+//     if (
+//       str[i] === "a" ||
+//       str[i] === "e" ||
+//       str[i] === "i" ||
+//       str[i] === "o" ||
+//       str[i] === "u"
+//     ) {
+//       count++;
+//     }
+//   }
+//   console.log("count: ", count);
+//   alert("count: " + count)
+// };
+
+// countfunction("aeiou");
+
+//for each loop(higher order function - functions that takes other function as a arguments)
+
+// let NumArray = [2, 34, 76, 99, 44];
+
+// NumArray.forEach((val) => {
+//   console.log(val * val);
+// //   NumArray.splice()
+// });
+// alert(NumArray);
+
+//filter 
+//calculate marks which r 90+ using filter
+
+// let marks = [66, 98, 99, 89,90,100];
+
+// let toppers = marks.filter((mark) => {
+//     return mark > 90;
+// })
+
+// console.log(toppers);
+
+//calculate sum and product of 1 to user input 'n' using reduce method
+
+let userInp = prompt("Enter N to Calculate Sum and Product : ");
+
+let arr = [];
+
+for(let i = 1; i < userInp; i++){
+    arr.push[i];
+}
+    console.log(arr)
