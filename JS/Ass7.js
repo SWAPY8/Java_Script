@@ -4,24 +4,20 @@
 // let parent = document.querySelector("body");
 
 // tbtn.insertBefore (
-//     tbtn, parent.firstChild 
+//     tbtn, parent.firstChild
 // )
 
 // tbtn.style.color= "green";
 
-function changemode(){
-    let screen = document.body;
-    screen.style.backgroundColor = "black"
-
-}
-
-let cmode = document.getElementById("#btn");
+let cmode = document.getElementById("btn");
 let mode = "light";
 
-cmode.addEventListener ("click", () => {
-    if(mode === "light"){
-        changemode();
-    }
-}
-) 
-
+cmode.addEventListener("click", () => {
+  if (mode === "light") {
+    document.querySelector("body").style.backgroundColor = "black";
+    mode = "dark";
+  }else{
+    document.querySelector("body").style.backgroundColor = "white";
+    mode = "light";
+  }
+});
