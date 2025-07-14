@@ -30,8 +30,10 @@
 // );
 
 
-let newclass = document.querySelector(".first");
-// newclass.setAttribute("class", "second")
+// let newclass = document.querySelector(".first");
+// // newclass.setAttribute("class", "second")
 
-newclass.classList.add("second")
+// newclass.classList.add("second")
+
+
 
