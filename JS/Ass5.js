@@ -89,7 +89,23 @@ let userInp = prompt("Enter N to Calculate Sum and Product : ");
 
 let arr = [];
 
-for(let i = 1; i < userInp; i++){
-    arr.push[i];
+for(let i = 1; i <= userInp; i++){
+    arr[i-1] = i;
 }
-    console.log(arr)
+console.log(arr);
+
+//reduce for sum
+
+let sum = arr.reduce((prev, curr) =>{
+    return prev + curr;
+})
+console.log("Sum = ", sum)
+
+//reduce for product
+let prod = arr.reduce((prev, curr) =>{
+    return prev * curr;
+})
+console.log("Prod = ", prod)
+
+
+
