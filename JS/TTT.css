@@ -1,0 +1,38 @@
+body{
+            display: flex;
+            margin: auto;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            
+
+        }
+        .main{
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        .box{
+            border: 2px solid red;
+            background-color: rgb(172, 236, 233);
+            width: 60px;
+            color: red;
+            height: 60px;
+            font-size: 6.4vmin;
+            border-radius: 4px;
+            align-items: center;
+            justify-content: center;
+           
+            
+        }
+        .winner{
+            color:brown;
+
+        }
+        .reset{
+            margin-top: 50px;
+        }
