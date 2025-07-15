@@ -27,21 +27,37 @@ boxes.forEach((box) => {
 });
 
 let winner = () => {
-    for(let pat of winpatterns){
-        let pos1val = boxes[pat[0]].innerText;
-        let pos2val = boxes[pat[1]].innerText;
-        let pos3val = boxes[pat[2]].innerText;
-     if(pos1val != "" && pos2val != "" &&pos3val != "" ){
-        if(pos1val === pos2val &&  pos2val === pos3val){
-            document.getElementsByClassName("winner").innerText = "winner " , pos1val  , " Winner Winnner, Chicken Dinner!!!!!!"
-           
-            reset();
-        }
-     }   
-    }
+  for (let pat of winpatterns) {
+    let pos1val = boxes[pat[0]].innerText;
+    let pos2val = boxes[pat[1]].innerText;
+    let pos3val = boxes[pat[2]].innerText;
+    if (pos1val != "" && pos2val != "" && pos3val != "") {
+      if (pos1val === pos2val && pos2val === pos3val) {
+        document.querySelector(".winner").innerText =
+          "winner " + pos1val + "," + " Winner Winnner, Chicken Dinner!!!!!!";
 
-}
-let playagain = document.getElementsByClassName("resetgame");
+        gameover();
+      } else {
+      }
+    }
+  }
+};
+
+let gameover = () => {
+  for (let box of boxes) {
+    box.disabled = true;
+  }
+};
+let playagain = document.querySelector(".resetgame");
+
 let reset = () => {
-   
-}
+  for (let box of boxes) {
+    box.disabled = false;
+    box.innerText = "";
+    document.querySelector(".winner").innerText = "";
+  }
+};
+
+playagain.addEventListener("click", () => {
+  reset();
+});

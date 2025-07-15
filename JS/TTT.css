@@ -31,8 +31,10 @@ body{
         }
         .winner{
             color:brown;
+            margin-top: 30px;
+
 
         }
-        .reset{
+        .resetgame{
             margin-top: 50px;
         }
