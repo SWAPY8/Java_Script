@@ -1,4 +1,4 @@
-const countryList = {
+var countryList = {
   AED: "AE",
   AFN: "AF",
   XCD: "AG",

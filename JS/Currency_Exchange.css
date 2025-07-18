@@ -33,7 +33,7 @@ main {
   display: flex;
   gap: 20px;
 }
-.conv {
+.dropdown {
   display: flex;
   justify-content: center;
   align-items: center;
