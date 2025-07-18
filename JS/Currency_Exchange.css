@@ -16,7 +16,7 @@
   justify-content: center;
 }
 h1 {
-  font-size: 60px;
+  font-size: 45px;
 }
 header,
 main {
@@ -31,6 +31,8 @@ main {
 .amt {
   margin-top: 0px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 .dropdown {
@@ -43,6 +45,9 @@ main {
 .examt {
   display: flex;
   gap: 20px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 input {
