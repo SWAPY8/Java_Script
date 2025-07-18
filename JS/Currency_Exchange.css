@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* background-color: white; */
+}
+.container {
+  width: 35vw;
+  overflow: hidden;
+  margin:  59px auto;
+  border: 3px solid orange;
+  border-radius: 20px;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 60px;
+}
+header,
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-direction: column;
+  margin: auto ;
+  font-size: 25px;
+}
+.amt {
+  margin-top: 0px;
+  display: flex;
+  gap: 20px;
+}
+.conv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.examt {
+  display: flex;
+  gap: 20px;
+}
+
+input {
+  border: 2px solid orange;
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 20px;
+}
+button {
+  padding: 5px;
+  border: 2px solid orange;
+  border-radius: 7px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+/* .amnt {
+  border: 2px solid red;
+  width: 70px;
+  height: 20px;
+} */
