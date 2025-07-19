@@ -1,70 +1,110 @@
 * {
   margin: 0;
   padding: 0;
-  /* background-color: white; */
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
+
+body {
+  background-color: #e8ce8c;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 10px;
+  min-height: 100vh;
+}
+
 .container {
-  width: 35vw;
-  overflow: hidden;
-  margin:  59px auto;
-  border: 3px solid orange;
-  border-radius: 20px;
-  background-color: aquamarine;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
-h1 {
-  font-size: 45px;
+
+header h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
 }
-header,
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-  flex-direction: column;
-  margin: auto ;
-  font-size: 25px;
+
+.amt, .dropdown, .examt {
+  margin-bottom: 20px;
 }
-.amt {
-  margin-top: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+
+.amt p,
+.examt p {
+  margin-bottom: 8px;
+  font-weight: 500;
 }
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
 .dropdown {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 30px;
-  margin-bottom: 30px;
+  justify-content: space-between;
+  gap: 10px;
 }
-.examt {
+
+.from, .to {
   display: flex;
-  gap: 20px;
-   display: flex;
-  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.from select, .to select {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.exc {
+  display: flex;
   align-items: center;
 }
 
-input {
-  border: 2px solid orange;
-  border-radius: 7px;
-  padding: 10px;
-  font-size: 20px;
+.btn {
+  display: flex;
+  justify-content: center;
 }
-button {
-  padding: 5px;
-  border: 2px solid orange;
-  border-radius: 7px;
-  font-size: 20px;
-  margin-bottom: 20px;
+
+.btn button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
 }
-/* .amnt {
-  border: 2px solid red;
-  width: 70px;
-  height: 20px;
-} */
+
+.btn button:hover {
+  background-color: #0056b3;
+}
+
+/* ✅ MEDIA QUERY FOR MOBILE DEVICES */
+@media (max-width: 600px) {
+  .dropdown {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .from, .to {
+    justify-content: space-between;
+  }
+
+  .btn button {
+    width: 100%;
+  }
+}

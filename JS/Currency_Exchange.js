@@ -1,5 +1,5 @@
 let base_url =
-  "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies";
+  "https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@2024.5.2/v1/currencies";
 
 let dropdowns = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector(".btn");
@@ -44,10 +44,12 @@ btn.addEventListener("click", async (evt) => {
   }
   console.log(fromcurr.value, tocurr.value);
 
-  let URL = `${base_url}/${fromcurr.value.toLowerCase()}/${tocurr.value.toLowerCase()}.json`;
+  let URL = `${base_url}/${fromcurr.value.toLowerCase()}.json`;
   let response = await fetch(URL);
   let data = await response.json();
-  let rate = data[tocurr.value.toLowerCase()];
+  let rate = data[fromcurr.value.toLowerCase()][tocurr.value.toLowerCase()];
   let final_amt = rate * amtvalue;
-  console.log(data);
+  console.log(final_amt);
+  let finaloutput = document.querySelector(".examt input");
+  finaloutput.value = final_amt;
 });
